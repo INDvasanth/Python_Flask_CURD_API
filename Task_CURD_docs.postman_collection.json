@@ -1,0 +1,399 @@
+{
+	"info": {
+		"_postman_id": "37b2af79-d68e-4af9-8019-ae6fec700caf",
+		"name": "Task_CURD_docs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24920755"
+	},
+	"item": [
+		{
+			"name": "readUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/users",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "readUsers",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/users",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.3.6 Python/3.11.3"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jul 2023 18:59:45 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "228"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"Client Name\": \"VEENA RAJESH SHAH\",\n        \"Deal Date\": \"Fri, 30 Jun 2023 00:00:00 GMT\",\n        \"Deal Type\": \"S\",\n        \"Price\": 103.55,\n        \"Quantity\": 56000,\n        \"Security Code\": 542580,\n        \"Security Name\": \"AARTECH\"\n    }\n]"
+				},
+				{
+					"name": "readUsers",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/users",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.3.6 Python/3.11.3"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jul 2023 19:06:47 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "453"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"Client Name\": \"VEENA RAJESH SHAH\",\n        \"Deal Date\": \"Fri, 30 Jun 2023 00:00:00 GMT\",\n        \"Deal Type\": \"S\",\n        \"Price\": 103.55,\n        \"Quantity\": 56000,\n        \"Security Code\": 542580,\n        \"Security Name\": \"AARTECH\"\n    },\n    {\n        \"Client Name\": \"VEENA RAJESH SHAH\",\n        \"Deal Date\": \"Fri, 30 Jun 2023 00:00:00 GMT\",\n        \"Deal Type\": \"B\",\n        \"Price\": 106.12,\n        \"Quantity\": 48000,\n        \"Security Code\": 542580,\n        \"Security Name\": \"AARTECH\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "addUsers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n     {\r\n        \"Client Name\": \"VEENA RAJESH SHAH\",\r\n        \"Deal Date\": \"2023-06-30\",\r\n        \"Deal Type\": \"B\",\r\n        \"Price\": 106.12,\r\n        \"Quantity\": 48000,\r\n        \"Security Code\": 542580,\r\n        \"Security Name\": \"AARTECH\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/users",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "addUsers",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n     {\r\n        \"Client Name\": \"VEENA RAJESH SHAH\",\r\n        \"Deal Date\": \"2023-06-30\",\r\n        \"Deal Type\": \"B\",\r\n        \"Price\": 106.12,\r\n        \"Quantity\": 48000,\r\n        \"Security Code\": 542580,\r\n        \"Security Name\": \"AARTECH\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/users",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.3.6 Python/3.11.3"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jul 2023 19:17:13 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "45"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User created successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "updateUsers",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n     {\r\n        \"Client Name\": \"VEENA RAJESH SHAH\",\r\n        \"Deal Date\": \"2023-06-30\",\r\n        \"Deal Type\": \"B\",\r\n        \"Price\": 106.12,\r\n        \"Quantity\": 48000,\r\n        \"Security Code\": 542580,\r\n        \"Security Name\": \"AARTECH\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/users",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "updateUsers",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n     {\r\n        \"Client Name\": \"VEENA RAJESH SHAH\",\r\n        \"Price\": 108.12,\r\n        \"Quantity\": 58000,\r\n        \"Security Name\": \"AARTECH\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/users/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"users",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.3.6 Python/3.11.3"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jul 2023 19:19:40 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "55"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User with ID 2 updated successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "deleteUsers",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n     {\r\n        \"Client Name\": \"VEENA RAJESH SHAH\",\r\n        \"Deal Date\": \"2023-06-30\",\r\n        \"Deal Type\": \"B\",\r\n        \"Price\": 106.12,\r\n        \"Quantity\": 48000,\r\n        \"Security Code\": 542580,\r\n        \"Security Name\": \"AARTECH\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/users/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "deleteUsers",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n     {\r\n        \"Client Name\": \"VEENA RAJESH SHAH\",\r\n        \"Deal Date\": \"2023-06-30\",\r\n        \"Deal Type\": \"B\",\r\n        \"Price\": 106.12,\r\n        \"Quantity\": 48000,\r\n        \"Security Code\": 542580,\r\n        \"Security Name\": \"AARTECH\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/users/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"users",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.3.6 Python/3.11.3"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jul 2023 19:20:21 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "55"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User with ID 3 deleted successfully\"\n}"
+				}
+			]
+		}
+	]
+}
